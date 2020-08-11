@@ -1,5 +1,8 @@
 <h2><%= @article.title %></h2>
 <p> <%= @article.content %> </p>
 
+
 <hr>
-<%= link_to 'Back to articles', articles_path %>
+<%= link_to articles_path do %>
+  <i class="fas fa-backward"></i> Back to articles
+<% end  %>
